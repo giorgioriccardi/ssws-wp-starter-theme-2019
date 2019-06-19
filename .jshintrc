@@ -1,0 +1,11 @@
+{
+  "undef": true,
+  "unused": true,
+  "browser": true,
+  "node": true,
+  "esversion": 6,
+  "globals": {
+    "wp": false,
+    "jQuery": false
+  }
+}

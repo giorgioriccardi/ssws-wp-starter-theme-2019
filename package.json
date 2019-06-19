@@ -1,0 +1,34 @@
+{
+  "name": "wordpress-starter-child-theme-sass-gulp",
+  "version": "1.2.0",
+  "description": "WordPress Theme Development Automation with Gulp",
+  "author": "Giorgio Riccardi",
+  "license": "(MIT OR Apache-2.0)",
+  "main": "index.php",
+  "homepage": "https://seatoskywebsolutions.ca",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giorgioriccardi/wordpress-starter-child-theme-sass-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/giorgioriccardi/wordpress-starter-child-theme-sass-gulp/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "es6-promise": "^4.2.5",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jsbeautifier": "^2.1.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rtlcss": "^1.3.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.6"
+  }
+}
