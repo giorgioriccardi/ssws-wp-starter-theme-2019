@@ -6,7 +6,6 @@
  *
  * @package SSWS_2019
  */
-
 get_header();
 ?>
 
@@ -16,16 +15,12 @@ get_header();
 		<?php
 // while ( have_posts() ) :
 //     the_post();
-
 //     get_template_part( 'template-parts/content', get_post_type() );
-
 //     the_post_navigation();
-
 //     // If comments are open or we have at least one comment, load up the comment template.
 //     if ( comments_open() || get_comments_number() ) :
 //         comments_template();
 //     endif;
-
 // endwhile; // End of the loop.
 ?>
 
@@ -39,11 +34,9 @@ get_header();
  * @subpackage  Timber
  * @since    Timber 0.1
  */
-
 $context = Timber::context();
 $timber_post = Timber::query_post();
 $context['post'] = $timber_post;
-
 if (post_password_required($timber_post->ID)) {
     Timber::render('single-password.twig', $context);
 } else {
