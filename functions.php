@@ -210,6 +210,8 @@ if (!class_exists('Timber')) {
     });
     return;
 }
+// initialize the Timber object
+$timber = new Timber\Timber();
 /**
  * Sets the directories (inside your theme) to find .twig files
  */

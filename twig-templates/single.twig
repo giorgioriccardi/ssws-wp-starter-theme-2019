@@ -2,11 +2,17 @@
 
 {% block content %}
     <div class="content-wrapper">
+        <pre>GRC this is a Timber part9</pre>
         <article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
             <img src="{{ post.thumbnail.src|resize(1200, 300) }}">
             <section class="article-content">
-                <h1 class="article-h1">{{ post.title }}</h1>
-                <a href="{{ post.link }}">{{ _e('edit') }}</a>
+                {# <h1 class="article-h1">{{ post.title }}</h1> #}
+                {# grc test #}
+                    {% block headline %}
+                        <h1 class="article-h1"> {{ post.title }}</h1>
+                    <h2 class="article-h2 debug">{{ post.subtitle }}</h2>
+                    <a href="{{ post.link }}">{{ _e('edit') }}</a>
+                {% endblock %}
                 <p class="blog-author">
                     <span>By</span>
                     <a href="{{post.author.path}}">

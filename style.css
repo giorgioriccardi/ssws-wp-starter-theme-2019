@@ -831,3 +831,6 @@ object {
 
 .debug {
   border: red solid thin; }
+
+.article-h1 {
+  color: teal; }
