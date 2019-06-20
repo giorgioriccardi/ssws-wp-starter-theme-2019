@@ -1,0 +1,14 @@
+<h1 class="debug">{{'Dummy Twig index.twig code'}}</h1>
+{% for post in posts %}
+    <h1>{{post.post_title}}</h1>
+    <h2>{{post.original_post_id}}</h2>
+    <h4>Author is:
+        {{post.post_author}}</h4>
+    <p>{{post.post_date|date('Y/d/m, g:i')}}</p>
+    <p>{{post.date}}</p>
+    <p>{{post.content}}</p>
+    {# {{dump(post)}} #}
+    <pre>
+        {{ dump(post) }}
+    </pre>
+{% endfor %}
