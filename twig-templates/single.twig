@@ -1,6 +1,4 @@
-<h1 class="debug">{{'Dummy Twig single.twig code'}}</h1>
-
-{# {% extends "base.twig" %} #}
+{% extends "base.twig" %}
 
 {% block content %}
     <div class="content-wrapper">
@@ -32,7 +30,7 @@
                             comments
                         </h3>
                         {% for cmt in post.comments %}
-                            {# {% include "comment.twig" with {comment:cmt} %} #}
+                            {% include "comment.twig" with {comment:cmt} %}
                         {% endfor %}
                     {% endif %}
                 </div>
@@ -41,9 +39,9 @@
                     <p>
                         comments for this post are closed
                     </p>
-            {% else %}
-                <!-- comment form -->
-                    {# {% include "comment-form.twig" %} #}
+                {% else %}
+                    <!-- comment form -->
+                    {% include "comment-form.twig" %}
                 {% endif %}
             </section>
         </article>
